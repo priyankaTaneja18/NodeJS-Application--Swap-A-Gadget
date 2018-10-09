@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swap A Gadget</title>
+  <link rel="stylesheet" type="text/css" href="../resources/style.css">
+
+  <!--[if lt IE 9]>
+  <script>
+  document.createElement("article");
+  document.createElement("aside");
+  document.createElement("footer");
+  document.createElement("header");
+  document.createElement("main");
+  document.createElement("nav");
+  document.createElement("section");
+</script>
+<![endif]-->
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <% include partials/user-navigation.ejs %>
+
+  <main>
+
+    <ul class="breadcrumb">
+      <li><a href="index">Home</a>&gt;</li>
+      <li><a href="contact">Contact</a></li>
+
+    </ul>
+    <section class="homesection">
+      <h3>	Welcome to Swap A Gadget!</h3>
+      <article>
+        <h2>
+           Please reach us out at the below. We will get back to you...
+        </h2>
+
+        <p  class="description">
+          <br>
+          <strong> Email your query at: </strong>swapagadget@gmail.com <br>
+          <strong> Mobile: </strong>9809809800
+
+        </article>
+
+
+      </section>
+
+    </main>
+
+    <aside class="sidepanel">
+      <% include partials/site-navigation.ejs %>
+    </aside>
+
+    <% include partials/footer.ejs %>
+
+  </body>
+  </html>

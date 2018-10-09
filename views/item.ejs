@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swap A Gadget</title>
+  <link rel="stylesheet" type="text/css" href="../resources/style.css">
+
+  <!--[if lt IE 9]>
+  <script>
+  document.createElement("article");
+  document.createElement("aside");
+  document.createElement("footer");
+  document.createElement("header");
+  document.createElement("main");
+  document.createElement("nav");
+  document.createElement("section");
+</script>
+<![endif]-->
+</head>
+<body>
+  <% include partials/header.ejs %>
+
+  <% include partials/user-navigation.ejs %>
+
+  <main>
+    <ul class="breadcrumb">
+      <li><a href="index">Home</a>&gt;</li>
+      <li><a href="categories">Categories</a>&gt;</li>
+      <li> <a href="item/<%=item.itemCode%>">Item</a></li>
+    </ul>
+    <section >
+      <h3>Computer Gadgets</h3>
+
+      <article >
+        <a href="categories"><img class="backButton" alt="back button" src="../resources/img/back.png"></a>
+        <img class="itemimage" alt="Pic Unavailable" src="<%=item.imageUrl%>">
+        <div class="itemdescription">
+          <h3><%=item.itemName%></h3>
+
+
+
+          <p class="description">
+            <b>Category:</b><%=item.catlogCategory%><br>
+            <b>Average Rating:</b>
+            <% for(var i=0;i<item.rating;i++){%>
+              &starf;
+              <%}%><br><br>
+              <%=item.itemDescription%></p>
+              <br>
+              <div id="aligncenter">
+                <a class="button " href="myItems"><b>&star;&nbsp;Rate It</b></a>
+                &emsp;
+                <a class="button " href="/item/swap/<%=item.itemCode%>"><img class="swap" alt="" src="resources/img/swap.jpg">&nbsp;<b>Swap It</b></a>
+              </div>
+            </div>
+
+
+
+
+          </article>
+
+        </section>
+
+      </main>
+      <aside class="sidepanel">
+        <% include partials/site-navigation.ejs %>
+      </aside>
+      <% include partials/footer.ejs %>
+
+    </body>
+    </html>

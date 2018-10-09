@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swap A Gadget</title>
+  <link rel="stylesheet" type="text/css" href="../resources/style.css">
+
+  <!--[if lt IE 9]>
+  <script>
+  document.createElement("article");
+  document.createElement("aside");
+  document.createElement("footer");
+  document.createElement("header");
+  document.createElement("main");
+  document.createElement("nav");
+  document.createElement("section");
+</script>
+<![endif]-->
+</head>
+<body>
+  <% include partials/header.ejs %>
+
+  <% include partials/user-navigation.ejs %>
+
+  <main>
+    <ul class="breadcrumb">
+      <li><a href="index">Home</a>&gt;</li>
+      <li><a href="mySwaps">My Swaps</a></li>
+
+    </ul>
+    <section >
+      <h3>Charlotte's Swap Offers</h3>
+      <table>
+        <tr>
+          <th>Gadget Name</th>
+          <th>Swap Offer</th>
+          <th></th>
+
+        </tr>
+        <tr>
+          <td><a href="item/CG1">Portable Mini Vacuum Cleaner for Keyboard</a></td>
+          <td><a href="item/CG3">Fingerprint Reader</a></td>
+          <td><a  class="buttonUD" href="#">Accept</a>
+            <a class="buttonUD" href="#">Reject</a></td>
+          </tr>
+
+          <tr>
+            <td><a href="item/CG2">Bluetooth Mouse</a></td>
+            <td><a href="item/TG2">Travel Bagpack</a></td>
+            <td><a  class="buttonUD" href="#">Withdraw Swap</a></td>
+
+          </tr>
+        </table>
+
+      </section>
+
+    </main>
+    <aside class="sidemenupanel">
+      <% include partials/site-navigation.ejs %>
+    </aside>
+    <% include partials/footer.ejs %>
+
+  </body>
+  </html>

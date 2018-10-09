@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swap A Gadget</title>
+  <link rel="stylesheet" type="text/css" href="../resources/style.css">
+
+  <!--[if lt IE 9]>
+  <script>
+  document.createElement("article");
+  document.createElement("aside");
+  document.createElement("footer");
+  document.createElement("header");
+  document.createElement("main");
+  document.createElement("nav");
+  document.createElement("section");
+</script>
+<![endif]-->
+</head>
+<body>
+  <% include partials/header.ejs %>
+
+  <% include partials/user-navigation.ejs %>
+
+  <main>
+    <ul class="breadcrumb">
+      <li><a href="index">Home</a>&gt;</li>
+      <li><a href="myItems">My Gadgets</a></li>
+
+    </ul>
+    <section >
+      <h3>Gadgets for swap</h3>
+      <table>
+        <tr>
+          <th>Gadget Name</th>
+          <th>Category</th>
+          <th>My Rating</th>
+          <th>Swapped</th>
+          <th></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td><a href="item/TG1">Portable Mini Vacuum Cleaner for Keyboard</a></td>
+          <td>Computer Gadgets</td>
+          <td>&starf;&starf;&starf;&starf;</td>
+          <td><img class="myswap" alt="" src="resources/img/swap.jpg"></td>
+          <td><a  class="buttonUD" href="item">Update</a></td>
+          <td><a class="buttonUD" href="myItems">Delete</a></td>
+        </tr>
+        <tr>
+          <td><a href="item/TG2">Travel Bagpack</a></td>
+          <td>Travel Gadgets</td>
+          <td>&starf;&starf;&starf;&starf;</td>
+          <td></td>
+          <td><a  class="buttonUD" href="item">Update</a></td>
+          <td><a class="buttonUD" href="myItems">Delete</a></td>
+        </tr>
+        <tr>
+          <td><a href="item/CG2">Bluetooth Mouse</a></td>
+          <td>Computer Gadgets</td>
+          <td>&starf;&starf;&starf;</td>
+          <td><img class="myswap" alt="" src="resources/img/tick.png"></td>
+          <td><a  class="buttonUD" href="item">Update</a></td>
+          <td><a class="buttonUD" href="myItems">Delete</a></td>
+        </tr>
+      </table>
+      <p class="abovefooter">Legend: <img class="swap" alt="" src="resources/img/swap.jpg">swap offer available <img class="swap" alt="" src="resources/img/tick.png"> already swapped</p>
+
+    </section>
+
+  </main>
+  <aside class="sidemenupanel">
+    <% include partials/site-navigation.ejs %>
+  </aside>
+  <% include partials/footer.ejs %>
+
+</body>
+</html>
